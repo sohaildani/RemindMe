@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="time_option_arr">
+        <item>Actual</item>
+        <item>Remaining</item>
+    </string-array>
+    
+    <string-array name="date_range_arr">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <!--item>Yearly</item-->                
+    </string-array>    
+    
+    <string-array name="val_arr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>        
+        <item>3</item>
+    </string-array>    
+    
+    <string-array name="spinner1_arr">
+        <item>Every</item>
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21st</item>
+        <item>22nd</item>
+        <item>23rd</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+        <item>29th</item>
+        <item>30th</item>
+        <item>31st</item>
+        <!--item>Last</item-->
+    </string-array>
+    
+    <string-array name="spinner2_arr">
+        <item>Day</item>
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>                        
+    </string-array>
+    
+    <string-array name="spinner3_arr">
+        <item>Month</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item> 
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>                               
+    </string-array>
+    
+    <string-array name="date_format_arr">                
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-M-d</item>        
+        <item>MMMM dd yyyy</item>
+        <item>MM/dd/yyyy</item>
+		<item>dd MMMM yyyy</item>                
+        <item>dd MMM yyyy</item>        
+        <item>d MMM yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>dd/MM/yy</item>                
+    </string-array>    
+        
+</resources>

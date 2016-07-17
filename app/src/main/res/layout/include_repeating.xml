@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/fromdate_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="From Date:  "
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/fromdate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fromdate_lb"
+        android:clickable="true"
+        android:drawableRight="@drawable/pencil"
+        android:drawablePadding="5dip"
+        android:onClick="onClick"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/todate_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromdate_lb"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="To Date:  "
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/todate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromdate_lb"
+        android:layout_toRightOf="@id/todate_lb"
+        android:clickable="true"
+        android:drawableRight="@drawable/pencil"
+        android:drawablePadding="5dip"
+        android:onClick="onClick"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/attime_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todate_lb"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="At Time:  "
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/attime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todate_lb"
+        android:layout_toRightOf="@id/attime_lb"
+        android:clickable="true"
+        android:drawableRight="@drawable/pencil"
+        android:drawablePadding="5dip"
+        android:onClick="onClick"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attime_lb"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Rule" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interval" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner1_arr" />
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spinner1"
+            android:entries="@array/spinner2_arr" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/spinner2"
+            android:layout_toRightOf="@id/spinner2"
+            android:text="of"
+            android:textColor="#ffffff" />
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView7"
+            android:entries="@array/spinner3_arr" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min(s)    "
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView8"
+            android:text="hour(s)   "
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView9"
+            android:text="day(s)    "
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView10"
+            android:text="month(s)  "
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView11"
+            android:text="year(s)"
+            android:textColor="#ffffff" />
+        
+        <EditText
+            android:id="@+id/mins_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:ems="2"
+            android:inputType="number"
+            android:text="0" />
+        <EditText
+            android:id="@+id/hours_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_toRightOf="@id/textView8"
+            android:ems="2"
+            android:inputType="number"
+            android:text="0" />
+        <EditText
+            android:id="@+id/days_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_toRightOf="@id/textView9"
+            android:ems="2"
+            android:inputType="number"
+            android:text="1" />
+        <EditText
+            android:id="@+id/months_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_toRightOf="@id/textView10"
+            android:ems="2"
+            android:inputType="number"
+            android:text="0" />
+        <EditText
+            android:id="@+id/years_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView8"
+            android:layout_toRightOf="@id/textView11"
+            android:ems="2"
+            android:inputType="number"
+            android:text="0" />
+    </RelativeLayout>
+
+</RelativeLayout>

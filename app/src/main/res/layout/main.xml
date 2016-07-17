@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_repeat" >
+
+    <RelativeLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0e4dd6" >
+
+        <TextView
+            android:id="@+id/heading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dip"
+	        android:shadowDx="0"
+	        android:shadowDy="0"
+	        android:shadowRadius="1"
+	        android:shadowColor="#333333"	        
+	        android:textColor="#d3e397"
+	        android:textSize="18sp"            
+            android:text="Medico Reminder" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/preferences" />
+        
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/imageButton1"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/add" />           
+
+    </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:background="@drawable/range"
+	    android:gravity="center_vertical" >
+
+		<ImageButton
+		    android:id="@+id/imageButton3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+		    android:onClick="onClick"
+		    android:background="@null"
+		    android:src="@drawable/left" />
+        
+		<TextView 
+		    android:id="@+id/range_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#ffffff" />
+		
+		<ImageButton
+		    android:id="@+id/imageButton4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+		    android:onClick="onClick"
+		    android:background="@null"
+		    android:src="@drawable/right" />			    
+	    
+	</LinearLayout>
+    
+	<LinearLayout
+		android:id="@+id/list_view"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:padding="5dip"
+		android:orientation="vertical" >
+	     
+		<ListView android:id="@android:id/list"
+		          android:layout_width="fill_parent"
+		          android:layout_height="fill_parent"
+		          android:divider="@drawable/line"
+		          android:dividerHeight="3dip"
+		          android:listSelector="@android:color/transparent"
+		          android:cacheColorHint="#00000000"
+		          android:drawSelectorOnTop="false" />
+		
+		<TextView android:id="@android:id/empty"
+		          android:layout_width="fill_parent"
+		          android:layout_height="fill_parent"
+		          android:gravity="center"
+		          android:textColor="#777777"
+		          android:text="No data" />
+	            
+	</LinearLayout>    
+    
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="3dip"
+		android:background="#5c755e"
+		android:gravity="right"
+		android:textColor="#3d4935"
+		android:textSize="10sp"
+		android:textStyle="italic"
+		/>
+
+</LinearLayout>

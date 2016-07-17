@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="bkg">#0ca8f1</color>
+	<color name="activ">#0ab2ba</color>
+	<color name="inactiv">#999999</color>
+	<color name="bkg2">#0ed2bb</color>
+</resources>

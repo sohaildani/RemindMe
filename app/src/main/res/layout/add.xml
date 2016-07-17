@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#062a84" >
+	
+	    <EditText
+	        android:id="@+id/msg_et"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:maxLines="2"
+	        android:hint="Message" >
+	    </EditText>
+	    
+	    <CheckBox
+	        android:id="@+id/sound_cb"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Play ringtone" />    
+	
+	    <ToggleButton
+	        android:id="@+id/toggleButton1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:onClick="onClick"
+	        android:background="@drawable/type_selector"
+	        android:padding="5dip"       
+	        android:textColor="#ffffff"        
+	        android:textOn=" Once    Repeat "
+	        android:textOff=" Once    Repeat " />
+	
+	    <ViewSwitcher
+	        android:id="@+id/view_switcher"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#5c755e"
+	        android:paddingTop="10dip"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="5dip" >
+	        
+	        <include layout="@layout/include_onetime" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="fill_parent" />        
+	        
+	        <include layout="@layout/include_repeating" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="fill_parent" />
+	        
+	    </ViewSwitcher>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#5c755e"
+	        android:gravity="right" >
+			<ImageButton
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@null"
+			    android:onClick="create"
+			    android:src="@drawable/ok" />	        
+	    </LinearLayout>	    
+	
+	</LinearLayout>
+
+</ScrollView>
