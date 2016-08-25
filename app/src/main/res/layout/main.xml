@@ -22,9 +22,10 @@
 	        android:shadowDy="0"
 	        android:shadowRadius="1"
 	        android:shadowColor="#333333"	        
-	        android:textColor="#d3e397"
-	        android:textSize="18sp"            
-            android:text="Medico Reminder" />
+	        android:textColor="@color/white"
+	        android:textSize="30dp"
+            android:text="Medico Reminder"
+			/>
 
         <ImageButton
             android:id="@+id/imageButton1"
@@ -32,13 +33,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
-            android:paddingLeft="5dip"
-            android:paddingRight="10dip"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dpip"
+            android:paddingRight="10dp"
             android:onClick="onClick"
             android:background="@null"
-            android:src="@drawable/preferences" />
+            android:src="@drawable/wrench" />
         
         <ImageButton
             android:id="@+id/imageButton2"
@@ -52,7 +53,7 @@
             android:paddingRight="5dip"
             android:onClick="onClick"
             android:background="@null"
-            android:src="@drawable/add" />           
+            android:src="@drawable/alarm_plus" />
 
     </RelativeLayout>
 
