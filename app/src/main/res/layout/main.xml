@@ -17,14 +17,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:padding="5dip"
+            android:padding="5dp"
 	        android:shadowDx="0"
 	        android:shadowDy="0"
 	        android:shadowRadius="1"
 	        android:shadowColor="#333333"	        
 	        android:textColor="@color/white"
-	        android:textSize="30dp"
+	        android:textSize="25dp"
             android:text="Medico Reminder"
+			android:paddingBottom="20dp"
 			/>
 
         <ImageButton
@@ -33,9 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:paddingTop="5dp"
+            android:paddingTop="10dp"
             android:paddingBottom="5dp"
-            android:paddingLeft="5dpip"
+            android:paddingLeft="5dp"
             android:paddingRight="10dp"
             android:onClick="onClick"
             android:background="@null"
@@ -47,10 +48,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@id/imageButton1"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
-            android:paddingLeft="10dip"
-            android:paddingRight="5dip"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
             android:onClick="onClick"
             android:background="@null"
             android:src="@drawable/alarm_plus" />
@@ -80,8 +81,9 @@
 		    android:id="@+id/range_tv"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:textSize="12sp"
-	        android:textColor="#ffffff" />
+	        android:textSize="20dp"
+	        android:textColor="#ffffff"
+			android:background="@color/colorPrimary"/>
 		
 		<ImageButton
 		    android:id="@+id/imageButton4"
@@ -89,7 +91,7 @@
 		    android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="10dip"
+            android:paddingLeft="10dp"
             android:paddingRight="10dp"
 		    android:onClick="onClick"
 		    android:background="@color/colorAccent"
