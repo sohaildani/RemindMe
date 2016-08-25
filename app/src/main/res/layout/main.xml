@@ -9,7 +9,7 @@
         android:id="@+id/menu_bar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#0e4dd6" >
+        android:background="@color/colorAccent" >
 
         <TextView
             android:id="@+id/heading_tv"
@@ -118,19 +118,11 @@
 		          android:layout_height="fill_parent"
 		          android:gravity="center"
 		          android:textColor="#777777"
-		          android:text="No data" />
+		          android:text="No data"
+			android:textSize="20dp"/>
 	            
 	</LinearLayout>    
     
-	<TextView 
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:paddingRight="3dip"
-		android:background="#5c755e"
-		android:gravity="right"
-		android:textColor="#3d4935"
-		android:textSize="10sp"
-		android:textStyle="italic"
-		/>
+
 
 </LinearLayout>
