@@ -23,7 +23,7 @@
 	        android:shadowRadius="1"
 	        android:shadowColor="#333333"	        
 	        android:textColor="@color/white"
-	        android:textSize="25dp"
+	        android:textSize="20dp"
             android:text="Medico Reminder"
 			android:paddingBottom="20dp"
 			/>
