@@ -4,4 +4,15 @@
 	<color name="activ">#0ab2ba</color>
 	<color name="inactiv">#999999</color>
 	<color name="bkg2">#0ed2bb</color>
+
+	<color name="white">#FFFFFF</color>
+	<color name="dark_grey">#424242</color>
+	<color name="medium_grey">#9E9E9E</color>
+	<color name="button_grey">#757575</color>
+	<color name="colorPrimary">#F50057</color>
+	<color name="colorPrimaryDark">#C51162</color>
+	<color name="textColorPrimary">#FFFFFF</color>
+	<color name="windowBackground">#FFFFFF</color>
+	<color name="navigationBarColor">#000000</color>
+	<color name="colorAccent">#FF80AB</color>
 </resources>

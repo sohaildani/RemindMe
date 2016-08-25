@@ -7,22 +7,29 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
-	    android:background="#062a84" >
+	     >
 	
 	    <EditText
 	        android:id="@+id/msg_et"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:ems="10"
+	        android:ems="20"
+			android:background="@color/white"
 	        android:maxLines="2"
-	        android:hint="Message" >
+	        android:hint="Message"
+			android:textSize="20dp">
 	    </EditText>
 	    
 	    <CheckBox
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="16dp"
 	        android:id="@+id/sound_cb"
+
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="Play ringtone" />    
+	        android:text="Play ringtone"
+			android:textSize="20dp"
+			/>
 	
 	    <ToggleButton
 	        android:id="@+id/toggleButton1"
@@ -30,44 +37,51 @@
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="center_horizontal"
 	        android:onClick="onClick"
+			android:textSize="20dp"
 	        android:background="@drawable/type_selector"
-	        android:padding="5dip"       
+	        android:padding="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
 	        android:textColor="#ffffff"        
-	        android:textOn=" Once    Repeat "
-	        android:textOff=" Once    Repeat " />
+	        android:textOn="Once Repeat "
+	        android:textOff="Once Repeat " />
 	
 	    <ViewSwitcher
 	        android:id="@+id/view_switcher"
-	        android:layout_width="fill_parent"
+			android:layout_marginLeft="20dp"
+	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:background="#5c755e"
-	        android:paddingTop="10dip"
-	        android:paddingLeft="5dip"
-	        android:paddingRight="5dip" >
+	        android:background="@color/windowBackground"
+	        android:paddingTop="10dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+
+			>
 	        
 	        <include layout="@layout/include_onetime" 
 	            android:layout_width="fill_parent" 
-	            android:layout_height="fill_parent" />        
+	            android:layout_height="fill_parent"
+				android:layout_centerHorizontal="true"
+				/>
 	        
 	        <include layout="@layout/include_repeating" 
 	            android:layout_width="fill_parent" 
-	            android:layout_height="fill_parent" />
-	        
-	    </ViewSwitcher>
+	            android:layout_height="fill_parent"
+				android:layout_centerHorizontal="true"/>
 
-	    <LinearLayout
-	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content"
-	        android:background="#5c755e"
-	        android:gravity="right" >
-			<ImageButton
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:background="@null"
-			    android:onClick="create"
-			    android:src="@drawable/ok" />	        
-	    </LinearLayout>	    
-	
+		</ViewSwitcher>
+
+
+
+
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/windowBackground"
+			android:onClick="create"
+			android:src="@drawable/ok"
+			/>
+
 	</LinearLayout>
 
 </ScrollView>

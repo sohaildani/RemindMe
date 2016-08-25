@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_repeat" >
+     >
 
     <RelativeLayout
         android:id="@+id/menu_bar"
@@ -67,12 +67,12 @@
 		    android:id="@+id/imageButton3"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
-            android:paddingLeft="5dip"
-            android:paddingRight="10dip"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
 		    android:onClick="onClick"
-		    android:background="@null"
+		    android:background="@color/colorAccent"
 		    android:src="@drawable/left" />
         
 		<TextView 
@@ -86,12 +86,12 @@
 		    android:id="@+id/imageButton4"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="10dip"
-            android:paddingRight="5dip"
+            android:paddingRight="10dp"
 		    android:onClick="onClick"
-		    android:background="@null"
+		    android:background="@color/colorAccent"
 		    android:src="@drawable/right" />			    
 	    
 	</LinearLayout>
@@ -99,9 +99,9 @@
 	<LinearLayout
 		android:id="@+id/list_view"
 		android:layout_width="fill_parent"
-		android:layout_height="0dip"
+		android:layout_height="0dp"
 		android:layout_weight="1"
-		android:padding="5dip"
+		android:padding="5dp"
 		android:orientation="vertical" >
 	     
 		<ListView android:id="@android:id/list"

@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
@@ -27,15 +28,28 @@ public class AlarmReceiver extends BroadcastReceiver {
 		
 		Alarm alarm = new Alarm(alarmId);
 		alarm.load(RemindMe.db);
-		PendingIntent pi = PendingIntent.getActivity(context, 0, new Intent(), 0);
-		NotificationCompat.Builder n = new NotificationCompat.Builder(context)
-				.addAction(R.drawable.ic_launcher,"This is Title",pi)
-				.setContentText("this is notification")
-				;
-
-
+		alarm.getName();
+		Uri sound= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 		NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-		nm.notify(574,n.build());
+		PendingIntent pi = PendingIntent.getActivity(context, 0, new Intent(), 0);
+		Notification n = new NotificationCompat.Builder(context)
+				.setContentTitle("Medico Reminder")
+				.setContentText("")
+				.setSound(sound)
+				.setContentIntent(pi)
+				.addAction(0,"Take pills on time",pi)
+				.setSmallIcon(R.drawable.ic_launcher)
+					.build();
+		if (RemindMe.isVibrate()) {
+			n.defaults |= Notification.DEFAULT_VIBRATE;
+		}
+		if (alarm.getSound()) {
+			n.sound = Uri.parse(RemindMe.getRingtone());
+			n.defaults |= Notification.DEFAULT_SOUND;
+		}
+		n.flags |= Notification.FLAG_AUTO_CANCEL;
+		nm.notify((int)alarmMsgId, n);
+		//nm.notify(1,n);
 
 	}
 

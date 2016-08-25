@@ -53,10 +53,7 @@ public class AlarmService extends IntentService {
 		}
 	}
 
-	/**
-	 * @param action
-	 * @param args {alarmId, alarmMsgId, startTime, endTime}
-	 */	
+
 	private void execute(String action, String... args) {		
 		Intent i;
 		PendingIntent pi;				

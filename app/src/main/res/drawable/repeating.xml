@@ -11,7 +11,7 @@
 		</shape>        
 	</item>
 	
-    <item android:left="50sp">
+    <item android:left="60dp">
 		<shape>
 			<solid 
 			    android:color="@color/inactiv"/>
@@ -19,5 +19,5 @@
 			    android:topRightRadius="5dp" />    
 		</shape>    
     </item>
-    
+
 </layer-list>

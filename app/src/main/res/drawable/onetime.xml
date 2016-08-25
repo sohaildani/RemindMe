@@ -11,7 +11,7 @@
 		</shape>        
 	</item>
 	
-    <item android:left="50sp">
+    <item android:left="60sp">
 		<shape>
 			<solid 
 			    android:color="@color/activ"/>
