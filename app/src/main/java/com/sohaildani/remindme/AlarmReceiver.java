@@ -49,7 +49,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		}
 		n.flags |= Notification.FLAG_AUTO_CANCEL;
 		nm.notify((int)alarmMsgId, n);
-		nm.notify(1,n);
+		//nm.notify(1,n);
 
 	}
 
