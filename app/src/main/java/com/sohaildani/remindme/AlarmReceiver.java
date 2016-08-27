@@ -15,7 +15,7 @@ import com.sohaildani.remindme.model.AlarmMsg;
 
 public class AlarmReceiver extends BroadcastReceiver {
 	
-	//private static final String TAG = "AlarmReceiver";
+	private static final String TAG = "AlarmReceiver";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
@@ -33,7 +33,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 		PendingIntent pi = PendingIntent.getActivity(context, 0, new Intent(), 0);
 		Notification n = new NotificationCompat.Builder(context)
-				.setContentTitle("Medico Reminder")
+				.setContentTitle("Reminder")
 				.setContentText("")
 				.setSound(sound)
 				.setContentIntent(pi)
@@ -49,7 +49,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		}
 		n.flags |= Notification.FLAG_AUTO_CANCEL;
 		nm.notify((int)alarmMsgId, n);
-		//nm.notify(1,n);
+		nm.notify(1,n);
 
 	}
 

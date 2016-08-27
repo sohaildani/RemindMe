@@ -23,9 +23,11 @@
 	        android:shadowRadius="1"
 	        android:shadowColor="#333333"	        
 	        android:textColor="@color/white"
-	        android:textSize="20dp"
-            android:text="Medico Reminder"
+	        android:textSize="30dp"
+            android:text="Reminder"
 			android:paddingBottom="20dp"
+			android:paddingTop="20dp"
+			android:paddingLeft="10dp"
 			/>
 
         <ImageButton
@@ -35,12 +37,12 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:paddingTop="10dp"
-            android:paddingBottom="5dp"
-            android:paddingLeft="5dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:onClick="onClick"
             android:background="@null"
-            android:src="@drawable/wrench" />
+            android:src="@drawable/ic_wrench_white_36dp" />
         
         <ImageButton
             android:id="@+id/imageButton2"
@@ -49,12 +51,12 @@
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@id/imageButton1"
             android:paddingTop="10dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="10dp"
-            android:paddingRight="5dp"
+            android:paddingRight="10dp"
             android:onClick="onClick"
             android:background="@null"
-            android:src="@drawable/alarm_plus" />
+            android:src="@drawable/ic_alarm_plus_white_36dp" />
 
     </RelativeLayout>
 
@@ -74,16 +76,16 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
 		    android:onClick="onClick"
-		    android:background="@color/colorAccent"
-		    android:src="@drawable/left" />
+		    android:background="@color/bkg2"
+		    android:src="@drawable/chevron_left" />
         
 		<TextView 
 		    android:id="@+id/range_tv"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:textSize="20dp"
+	        android:textSize="30dp"
 	        android:textColor="#ffffff"
-			android:background="@color/colorPrimary"/>
+			android:background="@color/bkg2"/>
 		
 		<ImageButton
 		    android:id="@+id/imageButton4"
@@ -94,8 +96,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
 		    android:onClick="onClick"
-		    android:background="@color/colorAccent"
-		    android:src="@drawable/right" />			    
+		    android:background="@color/bkg2"
+		    android:src="@drawable/chevron_right" />
 	    
 	</LinearLayout>
     

@@ -19,7 +19,7 @@
         android:layout_toRightOf="@id/fromdate_lb"
         android:clickable="true"
         android:drawableRight="@drawable/pencil"
-        android:drawablePadding="5dip"
+        android:drawablePadding="5dp"
         android:onClick="onClick"
         android:textColor="#000000" />
 
@@ -136,35 +136,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="min(s)    "
-            android:textColor="#ffffff" />
+            android:textColor="@color/button_grey" />
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView8"
             android:text="hour(s)   "
-            android:textColor="#ffffff" />
+            android:textColor="@color/button_grey" />
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView9"
             android:text="day(s)    "
-            android:textColor="#ffffff" />
+            android:textColor="@color/button_grey" />
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView10"
             android:text="month(s)  "
-            android:textColor="#ffffff" />
+            android:textColor="@color/button_grey" />
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView11"
             android:text="year(s)"
-            android:textColor="#ffffff" />
+            android:textColor="@color/button_grey" />
         
         <EditText
             android:id="@+id/mins_et"
