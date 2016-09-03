@@ -2,8 +2,8 @@
 #RemindMe
 >A task Reminder Material Design app
 
-This android app help in reminding a task .Actually I have created it for reminder for pills.
-This app is a companian app of my other app MedicoAlert
+RemindMe is app used for setting the reminders for taking pills on time .
+
 #Contributors
 Mohd Sohail Khan
 #Material Design
