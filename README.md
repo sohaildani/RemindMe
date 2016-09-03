@@ -22,7 +22,7 @@ JDK 7+
 Groovy
 Maven
 ```
-#Contributors
-Mohd Sohail Khan
-#Material Design
-Material Design is added to the app
+##Contribute
+Contributions are always welcome!
+Please read the [contribution guidelines](contributing.md) first.
+
